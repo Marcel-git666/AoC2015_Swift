@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1F2607D5279B157F00A88D1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607D4279B157F00A88D1E /* main.swift */; };
+		1F2607DC279B160400A88D1E /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DB279B160400A88D1E /* util.swift */; };
+		1F2607DE279B164E00A88D1E /* day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DD279B164E00A88D1E /* day01.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1F2607CF279B157F00A88D1E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		1F2607D1279B157F00A88D1E /* AoC2015_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AoC2015_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2607D4279B157F00A88D1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1F2607DB279B160400A88D1E /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		1F2607DD279B164E00A88D1E /* day01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = day01.swift; sourceTree = "<group>"; };
+		1F2607DF279B168700A88D1E /* day01.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.test; sourceTree = "<group>"; };
+		1F2607E0279B169800A88D1E /* day01.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.input; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		1F2607D3279B157F00A88D1E /* AoC2015_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1F2607DB279B160400A88D1E /* util.swift */,
 				1F2607D4279B157F00A88D1E /* main.swift */,
+				1F2607DD279B164E00A88D1E /* day01.swift */,
+				1F2607E1279B16AD00A88D1E /* Resources */,
 			);
 			path = AoC2015_Swift;
+			sourceTree = "<group>";
+		};
+		1F2607E1279B16AD00A88D1E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F2607DF279B168700A88D1E /* day01.test */,
+				1F2607E0279B169800A88D1E /* day01.input */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +107,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -121,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2607D5279B157F00A88D1E /* main.swift in Sources */,
+				1F2607DC279B160400A88D1E /* util.swift in Sources */,
+				1F2607DE279B164E00A88D1E /* day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -255,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
