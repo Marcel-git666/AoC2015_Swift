@@ -27,6 +27,18 @@ func part1(_ input: String) -> Int {
     return str2-str
     }
 
+func part1_a(_ input: String) -> Int {
+    let numberSum = input.reduce(0, { x, y in
+        y == "(" ? x+1 : x-1
+    })
+    return numberSum
+}
+
+func part1_b(_ input: String) -> Int {
+    let numberSum = input.reduce(0, { $1 == "(" ? $0+1 : $0-1 })
+    return numberSum
+}
+
 func part2(_ input: String) -> Int {
     var sum = 0
     var position = 0
@@ -41,6 +53,8 @@ func part2(_ input: String) -> Int {
             break
         }
     }
+
+
     
     return position
     
