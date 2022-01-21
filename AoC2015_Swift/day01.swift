@@ -14,7 +14,7 @@ enum Day01 {
     static func run() {
         let input1 = readFile("Resources/day01.input")
         print(input1)
-        print(part1(input1))
+        print(part1a(input1))
         print(part2(input1))
     }
 }
@@ -46,5 +46,7 @@ func part2(_ input: String) -> Int {
     
 }
 
-
+func part1a(_ input: String) -> Int {
+    input.filter{($0 == "(")}.count - input.filter{($0 == ")")}.count
+}
 

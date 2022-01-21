@@ -63,9 +63,9 @@
 		1F2607D3279B157F00A88D1E /* AoC2015_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				1F2607DD279B164E00A88D1E /* day01.swift */,
 				1F2607DB279B160400A88D1E /* util.swift */,
 				1F2607D4279B157F00A88D1E /* main.swift */,
-				1F2607DD279B164E00A88D1E /* day01.swift */,
 				1F2607E1279B16AD00A88D1E /* Resources */,
 			);
 			path = AoC2015_Swift;
