@@ -10,6 +10,7 @@
 		1F2607D5279B157F00A88D1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607D4279B157F00A88D1E /* main.swift */; };
 		1F2607DC279B160400A88D1E /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DB279B160400A88D1E /* util.swift */; };
 		1F2607DE279B164E00A88D1E /* day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DD279B164E00A88D1E /* day01.swift */; };
+		1F2607E7279C476A00A88D1E /* day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607E6279C476A00A88D1E /* day02.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		1F2607DD279B164E00A88D1E /* day01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = day01.swift; sourceTree = "<group>"; };
 		1F2607DF279B168700A88D1E /* day01.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.test; sourceTree = "<group>"; };
 		1F2607E0279B169800A88D1E /* day01.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day01.input; sourceTree = "<group>"; };
+		1F2607E6279C476A00A88D1E /* day02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02.swift; sourceTree = "<group>"; };
+		1F2607E8279C478E00A88D1E /* day02.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day02.test; sourceTree = "<group>"; };
+		1F2607E9279C47A100A88D1E /* day02.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day02.input; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2607DD279B164E00A88D1E /* day01.swift */,
+				1F2607E6279C476A00A88D1E /* day02.swift */,
 				1F2607DB279B160400A88D1E /* util.swift */,
 				1F2607D4279B157F00A88D1E /* main.swift */,
 				1F2607E1279B16AD00A88D1E /* Resources */,
@@ -76,6 +81,8 @@
 			children = (
 				1F2607DF279B168700A88D1E /* day01.test */,
 				1F2607E0279B169800A88D1E /* day01.input */,
+				1F2607E8279C478E00A88D1E /* day02.test */,
+				1F2607E9279C47A100A88D1E /* day02.input */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			files = (
 				1F2607D5279B157F00A88D1E /* main.swift in Sources */,
 				1F2607DC279B160400A88D1E /* util.swift in Sources */,
+				1F2607E7279C476A00A88D1E /* day02.swift in Sources */,
 				1F2607DE279B164E00A88D1E /* day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

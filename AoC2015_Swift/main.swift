@@ -6,9 +6,9 @@
 //
 
 //print("Nyní běží den 1.")
-Day01.run()
+//Day01.run()
 //print("Nyní běží den 2.")
-//Day02.run()
+Day02.run()
 //Day03.run()
 //Day04.run()
 //Day05.run()
