@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0BED3B27A4143200B88FB7 /* day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BED3A27A4143200B88FB7 /* day05.swift */; };
+		1F0BED3D27A4144000B88FB7 /* day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BED3C27A4144000B88FB7 /* day06.swift */; };
 		1F2607D5279B157F00A88D1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607D4279B157F00A88D1E /* main.swift */; };
 		1F2607DC279B160400A88D1E /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DB279B160400A88D1E /* util.swift */; };
 		1F2607DE279B164E00A88D1E /* day01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607DD279B164E00A88D1E /* day01.swift */; };
 		1F2607E7279C476A00A88D1E /* day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607E6279C476A00A88D1E /* day02.swift */; };
 		1F2607ED279F139A00A88D1E /* day03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607EC279F139A00A88D1E /* day03.swift */; };
+		1F2607EF279F44A800A88D1E /* day04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607EE279F44A800A88D1E /* day04.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F0BED3A27A4143200B88FB7 /* day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day05.swift; sourceTree = "<group>"; };
+		1F0BED3C27A4144000B88FB7 /* day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day06.swift; sourceTree = "<group>"; };
+		1F0BED3E27A414C300B88FB7 /* day05.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day05.test; sourceTree = "<group>"; };
+		1F0BED3F27A414D100B88FB7 /* day05.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day05.input; sourceTree = "<group>"; };
 		1F2607D1279B157F00A88D1E /* AoC2015_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AoC2015_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2607D4279B157F00A88D1E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1F2607DB279B160400A88D1E /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
@@ -39,6 +46,7 @@
 		1F2607EA279F137F00A88D1E /* day03.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day03.test; sourceTree = "<group>"; };
 		1F2607EB279F138B00A88D1E /* day03.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day03.input; sourceTree = "<group>"; };
 		1F2607EC279F139A00A88D1E /* day03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day03.swift; sourceTree = "<group>"; };
+		1F2607EE279F44A800A88D1E /* day04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day04.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,9 @@
 				1F2607DB279B160400A88D1E /* util.swift */,
 				1F2607D4279B157F00A88D1E /* main.swift */,
 				1F2607EC279F139A00A88D1E /* day03.swift */,
+				1F2607EE279F44A800A88D1E /* day04.swift */,
+				1F0BED3A27A4143200B88FB7 /* day05.swift */,
+				1F0BED3C27A4144000B88FB7 /* day06.swift */,
 				1F2607E1279B16AD00A88D1E /* Resources */,
 			);
 			path = AoC2015_Swift;
@@ -90,6 +101,8 @@
 				1F2607E9279C47A100A88D1E /* day02.input */,
 				1F2607EA279F137F00A88D1E /* day03.test */,
 				1F2607EB279F138B00A88D1E /* day03.input */,
+				1F0BED3E27A414C300B88FB7 /* day05.test */,
+				1F0BED3F27A414D100B88FB7 /* day05.input */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -157,8 +170,11 @@
 			files = (
 				1F2607D5279B157F00A88D1E /* main.swift in Sources */,
 				1F2607DC279B160400A88D1E /* util.swift in Sources */,
+				1F0BED3D27A4144000B88FB7 /* day06.swift in Sources */,
+				1F2607EF279F44A800A88D1E /* day04.swift in Sources */,
 				1F2607ED279F139A00A88D1E /* day03.swift in Sources */,
 				1F2607E7279C476A00A88D1E /* day02.swift in Sources */,
+				1F0BED3B27A4143200B88FB7 /* day05.swift in Sources */,
 				1F2607DE279B164E00A88D1E /* day01.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
