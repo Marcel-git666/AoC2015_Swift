@@ -62,7 +62,7 @@ struct Grid {
         for row in 0..<size {
             for col in 0..<size {
             
-                s += grid[row*size+col].debugDescription
+                s += grid[col*size+row].debugDescription
             }
                 s += "\n"
         }
