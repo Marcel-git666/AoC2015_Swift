@@ -15,7 +15,7 @@ import Foundation
 enum Day06 {
     static func run() {
         let input = readFile("Resources/day06.input")
-        var xmasHouseGrid = Grid(gridSize: 1000)
+        var xmasHouseGrid = Grid(gridSize: 999)
         let lines = input.lines
         print(lines)
         for line in lines {
@@ -55,7 +55,7 @@ enum Day06 {
             default: print(parts)
             }
         }
-        print(xmasHouseGrid.grid.filter {$0.isGlowing == true}.count)
+        print(xmasHouseGrid.grid.reduce(0) { $0 + $1.glowIntensity } )
         print("Konec")
     }
 
@@ -64,6 +64,7 @@ enum Day06 {
 struct House {
     
     var isGlowing: Bool
+    var glowIntensity = 0
     init(_ isGlowing: Bool = false) {
         
         self.isGlowing = isGlowing
@@ -105,7 +106,7 @@ struct Grid {
         
         for row in fromX...toX {
             for col in fromY...toY {
-                grid[row*size+col].isGlowing.toggle()
+                grid[row*size+col].glowIntensity += 2
             }
         }
         
@@ -116,7 +117,7 @@ struct Grid {
         
         for row in fromX...toX {
             for col in fromY...toY {
-                grid[row*size+col].isGlowing = true
+                grid[row*size+col].glowIntensity += 1
             }
         }
         
@@ -127,7 +128,10 @@ struct Grid {
         
         for row in fromX...toX {
             for col in fromY...toY {
-                grid[row*size+col].isGlowing = false
+                if grid[row*size+col].glowIntensity > 0 {
+                    grid[row*size+col].glowIntensity -= 1
+                }
+                
             }
         }
         
