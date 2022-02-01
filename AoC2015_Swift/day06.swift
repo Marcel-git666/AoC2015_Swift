@@ -14,19 +14,48 @@ import Foundation
 
 enum Day06 {
     static func run() {
-//        let input = readFile("Resources/day06.test")
-        var xmasHouseGrid = Grid(gridSize: 20)
-        print(xmasHouseGrid.debugDescription)
-        xmasHouseGrid.toggleLights(fromX: 1, fromY: 1, toX: 5, toY: 5)
-        print(xmasHouseGrid.debugDescription)
-        xmasHouseGrid.toggleLights(fromX: 1, fromY: 1, toX: 5, toY: 5)
-        print(xmasHouseGrid.debugDescription)
-        xmasHouseGrid.toggleLights(fromX: 4, fromY: 1, toX: 15, toY: 5)
-        print(xmasHouseGrid.debugDescription)
-        xmasHouseGrid.turnTheLightsOn(fromX: 6, fromY: 0, toX: 10, toY: 10)
-        print(xmasHouseGrid.debugDescription)
-        xmasHouseGrid.turnTheLightsOff(fromX: 7, fromY: 3, toX: 7, toY: 3)
-        print(xmasHouseGrid.debugDescription)
+        let input = readFile("Resources/day06.input")
+        var xmasHouseGrid = Grid(gridSize: 1000)
+        let lines = input.lines
+        print(lines)
+        for line in lines {
+            let parts = line.components(separatedBy: " ")
+            switch parts[0] {
+            case "toggle": let fromXY = parts[1].components(separatedBy: ",")
+                let toXY = parts[3].components(separatedBy: ",")
+                print("Tisknu snad fromXY - \(fromXY) a toXY \(toXY)")
+                let beginX = Int(fromXY[0]) ?? 0
+                let beginY = Int(fromXY[1]) ?? 0
+                let endX = Int(toXY[0]) ?? 0
+                let endY = Int(toXY[1]) ?? 0
+                print(beginX, beginY, endX, endY)
+                xmasHouseGrid.toggleLights(fromX: beginX, fromY: beginY, toX: endX, toY: endY)
+            case "turn":
+                switch parts[1] {
+                case "on": let fromXY = parts[2].components(separatedBy: ",")
+                    let toXY = parts[4].components(separatedBy: ",")
+                    print("Tisknu snad fromXY - \(fromXY) a toXY \(toXY)")
+                    let beginX = Int(fromXY[0]) ?? 0
+                    let beginY = Int(fromXY[1]) ?? 0
+                    let endX = Int(toXY[0]) ?? 0
+                    let endY = Int(toXY[1]) ?? 0
+                    print(beginX, beginY, endX, endY)
+                    xmasHouseGrid.turnTheLightsOn(fromX: beginX, fromY: beginY, toX: endX, toY: endY)
+                case "off": let fromXY = parts[2].components(separatedBy: ",")
+                    let toXY = parts[4].components(separatedBy: ",")
+                    print("Tisknu snad fromXY - \(fromXY) a toXY \(toXY)")
+                    let beginX = Int(fromXY[0]) ?? 0
+                    let beginY = Int(fromXY[1]) ?? 0
+                    let endX = Int(toXY[0]) ?? 0
+                    let endY = Int(toXY[1]) ?? 0
+                    print(beginX, beginY, endX, endY)
+                    xmasHouseGrid.turnTheLightsOff(fromX: beginX, fromY: beginY, toX: endX, toY: endY)
+                default: print(parts[1])
+                }
+            default: print(parts)
+            }
+        }
+        print(xmasHouseGrid.grid.filter {$0.isGlowing == true}.count)
         print("Konec")
     }
 
