@@ -69,9 +69,7 @@ struct House {
         
         self.isGlowing = isGlowing
     }
-    func glow() -> Self {
-        .init(true)
-    }
+
     
     var debugDescription: String {
         "\(isGlowing ? "☀️" : "⚾️")"
