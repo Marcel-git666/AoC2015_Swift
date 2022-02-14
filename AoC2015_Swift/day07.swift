@@ -11,14 +11,10 @@ enum Day07 {
     static func run() {
         let input = readFile("Resources/day07.test")
         let lines = input.lines
-        var primaryInstructions = [String]()
-        for line in lines {
-            print("Lajna je \(line) a má \(line.components(separatedBy: " ").count) komponent.")
-            if line.components(separatedBy: " ").count == 3 {
-                primaryInstructions.append(line)
-            }
-        }
-        print(primaryInstructions)
+        var wires: Wires
+        wires = .init(map: [:])
+        let wireMap = wires.performInstruction(key: "x", lines: lines)
+        print(wireMap)
         print("Prošli jsme \(input.lines.count) řetězců.")
         print("Konec")
     }
@@ -26,18 +22,41 @@ enum Day07 {
 }
 
 struct Wires {
-    let name: String
-    
-}
+    var map: [String: Int] = [:]
 
-
-func bitwiseMethods(method: String, a: Int, b: Int) -> Int  {
-    switch(method) {
-    case "AND": return a & b
-    case "OR": return a | b
-    case "NOT": return ~a
-    case "LSHIFT": return a << b
-    case "RSHIFT": return a >> b
-    default: return 0
+    init(map: [String: Int]) {
+        self.map = map
+    }
+    mutating func performInstruction(key: String, lines: [String]) -> [String: Int] {
+        for line in lines {
+            let components = line.components(separatedBy: "->")
+            print("Key je \(key) a komponenta1 je \(components[1].trimmingCharacters(in: .whitespaces)).")
+            if components[1].trimmingCharacters(in: .whitespaces) == key {
+                let left = Int(components[0].trimmingCharacters(in: .whitespaces)) ?? nil
+                print("Left je \(left).")
+                if left != nil {
+                    print("left není nil")
+                    map[key] = decodeNumber(number: left!)
+                }
+            }
+        }
+        return map
+    }
+    func decodeNumber(number: Int) -> Int {
+        return 1
     }
 }
+
+
+
+
+//func bitwiseMethods(method: String, a: Int, b: Int) -> Int  {
+//    switch(method) {
+//    case "AND": return a & b
+//    case "OR": return a | b
+//    case "NOT": return ~a
+//    case "LSHIFT": return a << b
+//    case "RSHIFT": return a >> b
+//    default: return 0
+//    }
+//}
