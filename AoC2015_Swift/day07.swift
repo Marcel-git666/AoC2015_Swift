@@ -33,16 +33,23 @@ struct Wires {
             print("Key je \(key) a komponenta1 je \(components[1].trimmingCharacters(in: .whitespaces)).")
             if components[1].trimmingCharacters(in: .whitespaces) == key {
                 let left = Int(components[0].trimmingCharacters(in: .whitespaces)) ?? nil
-                print("Left je \(left).")
+//                print("Left je \(left).")
                 if left != nil {
                     print("left není nil")
-                    map[key] = decodeNumber(number: left!)
+                    map[key] = decodeNumber(number: String(left!), lines: lines)
                 }
             }
         }
         return map
     }
-    func decodeNumber(number: Int) -> Int {
+    mutating func decodeNumber(number: String, lines: [String]) -> Int {
+        let numberConverted = Int(number.trimmingCharacters(in: .whitespaces)) ?? nil
+        if numberConverted != nil {
+            if !map.keys.contains(number.trimmingCharacters(in: .whitespaces)) {
+                map = performInstruction(key: number, lines: lines)
+                return 1
+            }
+        }
         return 1
     }
 }
