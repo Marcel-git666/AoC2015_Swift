@@ -21,6 +21,7 @@ extension String {
     }
 }
 
+
 extension Int {
     init?(_ s: Substring) {
         guard let int = Int(String(s)) else { return nil }
