@@ -15,6 +15,8 @@
 		1F2607E7279C476A00A88D1E /* day02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607E6279C476A00A88D1E /* day02.swift */; };
 		1F2607ED279F139A00A88D1E /* day03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607EC279F139A00A88D1E /* day03.swift */; };
 		1F2607EF279F44A800A88D1E /* day04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607EE279F44A800A88D1E /* day04.swift */; };
+		1F38DAD327DF488C00EC97CD /* day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38DAD227DF488B00EC97CD /* day12.swift */; };
+		1F3E1C1227CAA19B0067A876 /* day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E1C1127CAA19B0067A876 /* day11.swift */; };
 		1F7490D627BC51E1007FA022 /* day09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7490D527BC51E1007FA022 /* day09.swift */; };
 		1F7490F527C00EED007FA022 /* graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7490F427C00EED007FA022 /* graph.swift */; };
 		1F7490F927C28C4C007FA022 /* day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7490F827C28C4C007FA022 /* day10.swift */; };
@@ -52,6 +54,10 @@
 		1F2607EB279F138B00A88D1E /* day03.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day03.input; sourceTree = "<group>"; };
 		1F2607EC279F139A00A88D1E /* day03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day03.swift; sourceTree = "<group>"; };
 		1F2607EE279F44A800A88D1E /* day04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day04.swift; sourceTree = "<group>"; };
+		1F38DAD227DF488B00EC97CD /* day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day12.swift; sourceTree = "<group>"; };
+		1F38DAD427DF48AA00EC97CD /* day12.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day12.test; sourceTree = "<group>"; };
+		1F38DAD527DF48B700EC97CD /* day12.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day12.input; sourceTree = "<group>"; };
+		1F3E1C1127CAA19B0067A876 /* day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day11.swift; sourceTree = "<group>"; };
 		1F7490D527BC51E1007FA022 /* day09.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day09.swift; sourceTree = "<group>"; };
 		1F7490D727BC5201007FA022 /* day09.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day09.test; sourceTree = "<group>"; };
 		1F7490D827BC520C007FA022 /* day09.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day09.input; sourceTree = "<group>"; };
@@ -112,6 +118,8 @@
 				1FF61FA527AEC27A008B1249 /* day08.swift */,
 				1F7490D527BC51E1007FA022 /* day09.swift */,
 				1F7490F827C28C4C007FA022 /* day10.swift */,
+				1F3E1C1127CAA19B0067A876 /* day11.swift */,
+				1F38DAD227DF488B00EC97CD /* day12.swift */,
 				1F2607E1279B16AD00A88D1E /* Resources */,
 			);
 			path = AoC2015_Swift;
@@ -138,6 +146,8 @@
 				1F7490D827BC520C007FA022 /* day09.input */,
 				1F7490FA27C28C6D007FA022 /* day10.test */,
 				1F7490FB27C28C7D007FA022 /* day10.input */,
+				1F38DAD427DF48AA00EC97CD /* day12.test */,
+				1F38DAD527DF48B700EC97CD /* day12.input */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 			files = (
 				1F2607D5279B157F00A88D1E /* main.swift in Sources */,
 				1F2607DC279B160400A88D1E /* util.swift in Sources */,
+				1F3E1C1227CAA19B0067A876 /* day11.swift in Sources */,
 				1FF61FA627AEC27A008B1249 /* day08.swift in Sources */,
 				1F0BED3D27A4144000B88FB7 /* day06.swift in Sources */,
 				1F7490F927C28C4C007FA022 /* day10.swift in Sources */,
@@ -213,6 +224,7 @@
 				1F2607ED279F139A00A88D1E /* day03.swift in Sources */,
 				1F2607E7279C476A00A88D1E /* day02.swift in Sources */,
 				1F0BED3B27A4143200B88FB7 /* day05.swift in Sources */,
+				1F38DAD327DF488C00EC97CD /* day12.swift in Sources */,
 				1F2607DE279B164E00A88D1E /* day01.swift in Sources */,
 				1F8AAB1E27AB1D4200A4E930 /* day07.swift in Sources */,
 				1F7490D627BC51E1007FA022 /* day09.swift in Sources */,
