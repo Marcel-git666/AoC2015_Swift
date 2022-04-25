@@ -13,13 +13,12 @@ enum Day14 {
         print(input)
         let lines = input.lines
         var reindeers: [Reindeer] = []
-        var reindeerStars: [ReindeerStar] = []
+        
         var reindeer: Reindeer
-        var reindeerStar: ReindeerStar
+        
         for line in lines {
             let components = line.split(separator: " ")
             reindeer = Reindeer.init(name: String(components[0]), speed: Int(components[3])!, lengthOfFly: Int(components[6])!, rest: Int(components[13])!)
-            reindeerStar = ReindeerStar.init(name: String(components[0]), speed: Int(components[3])!, lengthOfFly: Int(components[6])!, rest: Int(components[13])!, distanceTravelled: 0)
             reindeers.append(reindeer)
         }
         print(reindeers)
@@ -40,25 +39,6 @@ struct Reindeer {
         self.speed = speed
         self.lengthOfFly = lengthOfFly
         self.rest = rest
-    }
-}
-
-struct ReindeerStar {
-    var name: String
-    var speed: Int
-    var lengthOfFly: Int
-    var rest: Int
-    var distanceTravelled: Int
-    init(name: String, speed: Int, lengthOfFly: Int, rest: Int, distanceTravelled: Int) {
-        self.name = name
-        self.speed = speed
-        self.lengthOfFly = lengthOfFly
-        self.rest = rest
-        self.distanceTravelled = distanceTravelled
-    }
-    mutating func changeDistance(distanceTravelled: Int) {
-        
-        self.distanceTravelled = distanceTravelled
     }
 }
 
