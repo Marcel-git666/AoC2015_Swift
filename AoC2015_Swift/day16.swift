@@ -65,19 +65,19 @@ enum Day16 {
                 &&
                 (sue.perfumes == nil || sue.perfumes! == 1)
                 &&
-                (sue.cats == nil || sue.cats! == 7)
+                (sue.cats == nil || sue.cats! > 7)
                 &&
                 (sue.samoyeds == nil || sue.samoyeds! == 2)
                 &&
-                (sue.pomeranians == nil || sue.pomeranians! == 2)
+                (sue.pomeranians == nil || sue.pomeranians! < 2)
                 &&
                 (sue.akitas == nil || sue.akitas! == 0)
                 &&
                 (sue.vizslas == nil || sue.vizslas! == 0)
                 &&
-                (sue.goldfish == nil || sue.goldfish! == 5)
+                (sue.goldfish == nil || sue.goldfish! < 5)
                 &&
-                (sue.trees == nil || sue.trees! == 3)
+                (sue.trees == nil || sue.trees! > 3)
                 &&
                 (sue.cars == nil || sue.cars! == 2)
             )
