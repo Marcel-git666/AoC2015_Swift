@@ -31,12 +31,17 @@ enum Day18 {
                 }
             }
         }
+        //part 2 rožínání rohových světel
+        strangeLights.turnTheLightsOn(xX: gridSize-1, yY: gridSize-1)
+        strangeLights.turnTheLightsOn(xX: 0, yY: 0)
+        strangeLights.turnTheLightsOn(xX: 0, yY: gridSize-1)
+        strangeLights.turnTheLightsOn(xX: gridSize-1, yY: 0)
         //print(strangeLights.debugDescription)
         strangeLights.countNeighbours()
         //print(strangeLights.debugDescription)
         for i in 0..<100 {
             print("Změna číslo \(i+1):\n")
-            strangeLights.changeLights()
+            strangeLights.changeLightsPart2()
             strangeLights.countNeighbours()
             //print(strangeLights.debugDescription)
         }
@@ -156,6 +161,25 @@ struct LightGrid {
                 }
             }
         }
+    }
+    
+    func changeLightsPart2() {
+        for row in 0..<size {
+            for col in 0..<size {
+                if grid[col*size+row].isGlowing == true && (grid[col*size+row].neighbours == 2 || grid[col*size+row].neighbours == 3) {
+                    grid[col*size+row].isGlowing = true
+                } else {
+                    grid[col*size+row].isGlowing = false
+                }
+                if grid[col*size+row].isGlowing == false && grid[col*size+row].neighbours == 3 {
+                    grid[col*size+row].isGlowing = true
+                }
+            }
+        }
+        grid[0*size+0].isGlowing = true
+        grid[size*size-1+0].isGlowing = true
+        grid[0*size+size-1].isGlowing = true
+        grid[(size-1)*(size-1)+size-1].isGlowing = true
     }
             
 }
