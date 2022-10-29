@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F0BED3B27A4143200B88FB7 /* day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BED3A27A4143200B88FB7 /* day05.swift */; };
 		1F0BED3D27A4144000B88FB7 /* day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BED3C27A4144000B88FB7 /* day06.swift */; };
+		1F136C95290DC2F900953EA2 /* day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F136C94290DC2F900953EA2 /* day19.swift */; };
 		1F17F5152810A5EC0032B5DA /* day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17F5142810A5EB0032B5DA /* day13.swift */; };
 		1F17F5192815B3B10032B5DA /* day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17F5182815B3B10032B5DA /* day14.swift */; };
 		1F2607D5279B157F00A88D1E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2607D4279B157F00A88D1E /* main.swift */; };
@@ -47,6 +48,9 @@
 		1F0BED3C27A4144000B88FB7 /* day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day06.swift; sourceTree = "<group>"; };
 		1F0BED3E27A414C300B88FB7 /* day05.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day05.test; sourceTree = "<group>"; };
 		1F0BED3F27A414D100B88FB7 /* day05.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day05.input; sourceTree = "<group>"; };
+		1F136C94290DC2F900953EA2 /* day19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day19.swift; sourceTree = "<group>"; };
+		1F136C96290DC31400953EA2 /* day19.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day19.input; sourceTree = "<group>"; };
+		1F136C97290DC31F00953EA2 /* day19.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day19.test; sourceTree = "<group>"; };
 		1F17F5122810A5B30032B5DA /* day13.test */ = {isa = PBXFileReference; lastKnownFileType = text; path = day13.test; sourceTree = "<group>"; };
 		1F17F5132810A5C60032B5DA /* day13.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day13.input; sourceTree = "<group>"; };
 		1F17F5142810A5EB0032B5DA /* day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day13.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				1FC5C810289863B000BF0298 /* day16.swift */,
 				1F7F333228A1836200B6D807 /* day17.swift */,
 				1F7F333728A2D37F00B6D807 /* day18.swift */,
+				1F136C94290DC2F900953EA2 /* day19.swift */,
 				1F2607E1279B16AD00A88D1E /* Resources */,
 			);
 			path = AoC2015_Swift;
@@ -186,6 +191,8 @@
 				1F7F333428A1860B00B6D807 /* day17.input */,
 				1F7F333528A2D27600B6D807 /* day18.input */,
 				1F7F333628A2D2C700B6D807 /* day18.test */,
+				1F136C96290DC31400953EA2 /* day19.input */,
+				1F136C97290DC31F00953EA2 /* day19.test */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -221,7 +228,7 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					1F2607D0279B157F00A88D1E = {
 						CreatedOnToolsVersion = 13.2;
@@ -267,6 +274,7 @@
 				1F0BED3B27A4143200B88FB7 /* day05.swift in Sources */,
 				1F38DAD327DF488C00EC97CD /* day12.swift in Sources */,
 				1FB320F7281D6EDA009596FC /* day15.swift in Sources */,
+				1F136C95290DC2F900953EA2 /* day19.swift in Sources */,
 				1F2607DE279B164E00A88D1E /* day01.swift in Sources */,
 				1F7F333328A1836200B6D807 /* day17.swift in Sources */,
 				1FC5C811289863B000BF0298 /* day16.swift in Sources */,
@@ -312,6 +320,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -373,6 +382,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -396,7 +406,9 @@
 		1F2607D9279B157F00A88D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -406,7 +418,9 @@
 		1F2607DA279B157F00A88D1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
